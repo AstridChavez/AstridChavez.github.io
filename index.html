@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Encriptador</title>
+    </head>
+    <body style="display: flex;">
+        <div>
+            <header>
+                <img src="img/Logo.png" alt="logo de alura" class="logo">
+            </header>
+            <main>
+                <section>
+                    <textarea class="text-area" cols="30" rows="5"
+                        placeholder="Ingrese el texto aqui"></textarea>
+                    <div>
+                        <img src="img/infoIcon.png" class="icon" alt="info" />
+                        <span class="secondary-text">Letras en minúsculas y sin
+                            acento</span>
+                    </div>
+                    <div class="botones">
+                        <button id="btnEncriptar" class="btn-encriptar">Encriptar</button>
+                        <button id="btnDesencriptar" class="btn-desencriptar">Desencriptar</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="section-two">
+            <div id="initialEncript">
+                <img style="background-color: white;" src="img/person.png"
+                    alt="person">
+                <h3 style="background-color: white;">Nenhuma mensagem encontrada</h1>
+                <span style="background-color: white;" class="secondary-text">Digite
+                    um texto que você deseja
+                    criptografar ou descriptografar.</span>
+            </div>
+            <div id="processEncript">
+                <div id="dataEncript"></div>
+                <button id="btnCopiar" class="btn-copiar">Copiar</button>
+            </div>
+        </div>
+    </body>
+    <script defer src="js/encriptador.js"></script>
+</html>
